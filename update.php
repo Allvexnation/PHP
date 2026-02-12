@@ -16,8 +16,6 @@ $password = $_POST['password'];
 
 if(!empty($password)) {
     $hashPass = password_hash($password, PASSWORD_DEFAULT);
-
-
     $query = "UPDATE users SET fullname = '$fullname', email = '$email', password = '$hashPass' WHERE id=$id";
 } else {
     $query = "UPDATE users SET fullname = '$fullname', email = '$email' WHERE id=$id";
@@ -56,7 +54,7 @@ if (mysqli_query($con, $query)) {
     </form>
     <script>
     function confirmUpdate() {
-        return confirm("Are you sure you want to update thjis user?");
+        return confirm("Are you sure you want to update this user?");
     }
 </script>
 </body>
