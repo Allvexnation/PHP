@@ -3,11 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
     <title>Simple CRUD</title>
+    <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
 
-<h2>User List</h2>
+<div class="container">
+    <h2>User List</h2>
 
 <a href="add.php">Add New User</a>
 <br><br>
@@ -43,5 +47,6 @@
 
 </table>
 
+</div>
 </body>
 </html>

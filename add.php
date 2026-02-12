@@ -20,9 +20,11 @@ if(isset($_POST['submit'])) {
 <html lang="en">
     <head>
        <title> ADD USER</title>
+       <link rel="stylesheet" href="stylee.css">
     </head>
     <body>
-        <form method="POST">
+       <div class="form-container">
+         <form method="POST">
             <label for="fullname">Your Fullname</label>
             <input type="text" name="fullname">
             <label for="email">Your email</label>
@@ -31,5 +33,6 @@ if(isset($_POST['submit'])) {
             <input type="text" name="password">
             <button type="submit" name="submit">submit</button>
         </form>
+       </div>
     </body>
 </html>

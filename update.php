@@ -41,9 +41,11 @@ if (mysqli_query($con, $query)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylee.css"
 </head>
 <body>
-    <form method="POST" onsubmit = "return confirmUpdate()">
+  <div class="form-container">
+      <form method="POST" onsubmit = "return confirmUpdate()">
     <label for="email">Your email</label>
     <input type="text" name="email" value="<?php echo $row['email']; ?>"
     <label for="fullname">Your fullname</label>
@@ -52,6 +54,7 @@ if (mysqli_query($con, $query)) {
     <input type="text" name="password" nmame="password">
     <button type ="submit" name="update">Update</button>
     </form>
+  </div>
     <script>
     function confirmUpdate() {
         return confirm("Are you sure you want to update this user?");
